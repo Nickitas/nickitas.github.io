@@ -1,0 +1,21 @@
+/* Компонент календарь */
+
+.rdrMonthsHorizontal {
+    justify-content: space-around;
+}
+.rdrStartEdge, .rdrEndEdge, .rdrDayNumber, .rdrInRange {
+    color: #0d6efd !important;
+}
+.date_res {
+    color: #707071;
+}
+
+@media (max-width:768px) {
+    .Calendar {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    .Calendar .rdrCalendarWrapper.rdrDateRangeWrapper {
+        min-width: 700px;
+    }
+}

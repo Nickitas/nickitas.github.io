@@ -1,0 +1,59 @@
+/* Блок контактной информации */
+
+.Contacts iframe {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.Contacts .rostov_img {
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    background: no-repeat url(../../../img/rostov.jpg) center;
+    background-size: cover;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+}
+@media (max-width:1200px) {
+    .Contacts .rostov_img {
+        background-attachment: fixed;
+    }
+}
+
+.Contacts .line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Contacts a {
+    text-decoration: none;
+}
+
+
+.Contacts .rostov_img h1 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.Contacts .line p {
+    margin: 2px 0;
+}
+
+
+
+
+@media (max-width:843px) {
+    .Contacts .rostov_img {
+        padding: 40px 20px;
+        height: auto;
+    }
+}
+@media (max-width:551px) {
+    .Contacts .line p {
+        font-size: 12px;
+    }
+}

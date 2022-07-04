@@ -1,0 +1,5 @@
+/* Модальное окно для отзыва */
+
+.ReviewsModal textarea:focus {
+    border-radius: 0;
+}

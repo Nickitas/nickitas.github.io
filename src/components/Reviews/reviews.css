@@ -1,0 +1,113 @@
+/* Отзывы */
+
+.Reviews .baner {
+    padding: .5rem 0;
+    background-color: #0d6efd;
+    overflow: hidden;
+    max-height: 360px;
+}
+
+.Reviews .animated2 svg, .Reviews .animated svg {
+    margin: 15px 0;
+    opacity: .8;
+}
+.Reviews .animated2 {
+    transition: all 1.5s ease;
+    animation: slideup 1.5s infinite linear;
+    opacity: .4;
+}
+.Reviews .animated {
+    transition: all 1.5s ease;
+    animation: slideup 1.5s infinite linear;
+}
+
+@media (max-width:768px) {
+    .Reviews .baner {
+        padding: .4rem 0;
+        height: 250px;
+    }
+    .Reviews .baner h2 {
+        font-size: 68px;
+    }
+    .Reviews .baner h3 {
+        font-size: 24px;
+    }
+}
+@media (max-width:351px) {
+    .Reviews .baner h2 {
+        font-size: 42px;
+    }
+    .Reviews .baner h3 {
+        font-size: 18px;
+    }
+}
+
+@keyframes slideup {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(-25%); }
+    50% { transform: translateY(-50%); }
+    100% { transform: translateY(-100%); }
+}
+
+
+.Reviews h2 {
+    font-size: 84px;
+    font-weight: 900;
+    text-align: left;
+    color: #fff;
+}
+
+.Reviews h3 {
+    margin: 0 0 20px 0;
+    text-align: left;
+    color: #fff;
+}
+
+.Reviews p ~ .Reviews p {
+    margin: 10px 0 0 0;
+}
+
+.Reviews p.marks {
+    margin: 0;
+    color: #707071;
+}
+
+.Reviews a.name {
+    margin: 0 0 10px 0;
+}
+
+.Reviews span.place {
+    margin: 10px 0 0 0;
+    color: #707071;
+    font-size: 14px;
+}
+
+.Reviews p.date {
+    margin: 0;
+    color: #707071;
+}
+
+@media (max-width:993px) {
+    .Reviews p.marks {
+        font-size: 10px;
+    }
+    .Reviews a.name {
+        margin: 0 0 7px 0;
+        font-size: 18px;
+    }
+    .Reviews span.place, .Reviews p.date {
+        margin: 6px 0 0 0;
+        font-size: 10px;
+    }
+    .Reviews p.card-text {
+        font-size: 16px;
+    }
+    .Reviews span.person {
+        font-size: 13px;
+    }
+}
+@media (max-width:445px) {
+    .Reviews p.marks span {
+        display: none;
+    }
+}

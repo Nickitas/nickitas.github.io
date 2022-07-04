@@ -1,0 +1,20 @@
+/* Блок услуг */
+
+.Services .cards-wrapper {
+    margin: 0px auto;
+    flex-grow: initial;
+}
+
+.Services .card {
+    width: 18rem;
+}
+
+.Services .star_col {
+    padding: 0;
+}
+
+@media (max-width:322px) {
+    .Services .card {
+        width: 14rem;
+    }
+}

@@ -1,0 +1,22 @@
+/* Блок для вывода информации */
+
+.AlertBlock .col-sm-1 {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:576px) {
+    .AlertBlock .row {
+        flex-direction: column-reverse;
+    }
+    .AlertBlock .col-sm-1:last-child {
+        justify-content: flex-end;
+    }
+    .AlertBlock .col-sm-1:first-child {
+        justify-content: flex-start;
+    }
+    .AlertBlock b, .AlertBlock p  {
+        font-size: 13px;
+    }
+}

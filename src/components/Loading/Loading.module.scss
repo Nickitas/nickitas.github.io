@@ -1,0 +1,61 @@
+$ncirc: 2;
+$color: #0d6efd;
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+
+.Loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.demo {
+    height: 102px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 45%;
+    left: calc(50% - 50px);
+}
+    
+.circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        border: 5px solid transparentize($color, 0.3);
+        border-right: none;
+        border-top: none;
+        backgroudn-clip: padding;
+        box-shadow: inset 0px 0px 10px transparentize($color, 0.85);
+    }
+}
+  
+    
+@keyframes spin {
+    from
+    {transform: rotate(0deg);}
+    to
+    {transform: rotate(360deg);}
+  }
+      
+@for $i from 0 through $ncirc  {
+    .circle:nth-of-type(#{$i}) {
+        transform: rotate($i * 70deg);
+    }
+    .inner {
+        animation: spin 2s infinite linear;
+    }
+}
+        
+.demo {
+    animation: spin 5s infinite linear;
+}

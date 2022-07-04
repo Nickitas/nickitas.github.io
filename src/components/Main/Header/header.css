@@ -1,0 +1,60 @@
+/* Банер бренда */
+.Header .brend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.Header .brend img {
+    margin-right: 3px;
+}
+
+.Header .carousel-caption {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #707071d0 !important;
+    border-radius: 25px;
+}
+
+.Header .carousel-item {
+    max-height: calc(100vh - 63px);
+}
+
+Header .nav-link a {
+    color: #707071;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:571px) {
+    .Header .brend {
+        flex-direction: column;
+        font-size: 18px;
+    }
+    .Header .carousel-caption {
+        padding: .8rem;
+    }
+    .Header .carousel-caption h3 {
+        font-size: 20px;
+    }
+    .Header .carousel-caption p {
+        font-size: 14px;
+    }
+}
+@media (max-width:516px) {
+    .Header .carousel-caption {
+        padding: .6rem;
+    }
+    .Header .carousel-caption h3 {
+        font-size: 16px;
+    }
+    .Header .carousel-caption p {
+        font-size: 12px;
+    }
+}
+@media (max-width:447px) {
+    .Header .carousel-caption p {
+        display: none;
+    }
+}

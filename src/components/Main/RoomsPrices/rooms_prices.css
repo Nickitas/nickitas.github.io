@@ -1,0 +1,14 @@
+/* Блок цен на разные объекты */
+
+.card-img-top {
+    overflow-y: hidden;
+    height: 26.042vw;
+    min-height: 200px;
+  }
+@media (max-width:576px) {
+    .card-img-top {
+      overflow-y: hidden;
+      height: auto;
+      min-height: none;
+    }
+}

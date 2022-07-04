@@ -1,0 +1,36 @@
+/* AUTHREG */
+.Auth, .Reg {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.Auth a, .Reg a {
+   cursor: pointer;
+}
+.AuthReg button.btn {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+.AuthReg .adoption-text {
+    margin: 0 auto;
+    max-width: 450px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.tooltip div {
+    margin: 0 auto;
+    width: 90%;
+    max-width: none;
+}
+
+.Auth button.btn-link, .Reg button.btn-link {
+    padding-left: 0;
+    display: flex;
+    width: 100%;
+    max-width: none !important;
+}
+.Auth button.btn-link:focus, .Reg button.btn-link:focus {
+    background-color: transparent;
+}

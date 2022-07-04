@@ -1,0 +1,37 @@
+/* Форма бронирования на главной странице */
+
+.BookingForm h3 {
+  font-weight: 200;
+}
+
+.BookingForm .rdrCalendarWrapper.rdrDateRangeWrapper {
+  max-width: 100%;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.BookingForm .col-sm b {
+  word-wrap: nowrap;
+}
+
+.BookingForm .col-sm-1:first-child {
+  padding-right: 0;
+}
+
+@media (max-width:576px) {
+  .BookingForm .row {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .BookingForm .col-sm-1:first-child {
+    position: absolute;
+    left: 0;
+  }
+  .BookingForm .col-sm-5 {
+    width: 100%;
+  }
+  .BookingForm .col-sm-1:last-child {
+    position: absolute;
+    right: 0;
+  }
+}
